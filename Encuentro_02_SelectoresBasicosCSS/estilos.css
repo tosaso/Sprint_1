@@ -1,0 +1,48 @@
+#titulo {
+    color: red;
+  }
+  
+  .clase {
+    font-weight: 700;
+  }
+  
+  #especial {
+    /*display: block;*/
+    width: 300px;
+    height: 50px;
+    border: solid 5px black;
+  }
+  
+  .div {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    padding: 5px;
+    border: solid 5px red;
+    background-color: aqua;
+  }
+  
+  div {
+    height: 80px;
+    width: 80px;
+    font-size: 40px;
+    text-align: center;
+    font-family: Arial;
+  }
+  
+  .green {
+    background-color: green;
+  }
+  
+  .blue {
+    background-color: blue;
+  }
+  
+  .horizontal-bloque {
+    display: inline-block;
+  }
+  
+  .horizontal {
+    display: inline;
+  }
+  
