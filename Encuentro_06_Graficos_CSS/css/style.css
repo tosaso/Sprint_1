@@ -1,0 +1,25 @@
+body {
+    background: green;
+  }
+  
+  #poligono {
+    height: 600px;
+    width: 90%;
+  }
+  
+  .ancho-fijo {
+    width: 400px;
+  }
+  
+  .ancho-fijo img {
+    /*width: 100%;*/
+    max-width: 100%;
+  }
+  
+  #div-poligono {
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    background: red;
+    width: 300px;
+    height: 300px;
+  }
+  
