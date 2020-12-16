@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.texto {
+    color: violet;
+}
+div.texto#rojo {
+    color: red;
+}
+div span.texto {
+    color: blue;
+}
+
+div.texto > span {
+    color: green;
+}
+#rojo.bold {
+    color: yellow;
+    background: black;
+    font-weight: bold;
+}
+span.verde div {
+    color: white;
+    background-color: orange;
+}
+.texto.bold>span{
+    border: solid 1px red;
+    display: block;
+    margin: 5px;
+    padding: 5px;
+}
+#ad + div {
+    font-size: 35px;
+    border: solid 1px blue;
+    width: 350px;
+}
+#ad-hermanos~li{
+    color: brown;
+    background: chocolate;
+}
+
+ul{
+    margin-bottom: 10px;
+}
+#div-ad-hermanos~div{
+    color: red;
+    background-color: blue;
+}

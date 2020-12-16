@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Especificidad en reverso</title>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+
+    <div>
+      <p>Este parrafo tiene color darkcyan</p>
+    </div>
+
+    <div class="unaClase">
+      <div class="otraClase">Este elemento tiene font-size: 30px</div>
+    </div>
+
+    <div>
+      <div class="miClase">Este elemento tiene color: red;</div>
+    </div>
+
+    <ul>
+      <li>list-style-type: none;</li>
+      <li>color: purple;</li>
+      <li>font-weight: bold;</li>
+    </ul>
+
+    <div id="algunId">
+      <span>
+        <div>
+          font-size: 40px;
+        </div>
+      </span>
+    </div>
+
+    <span class="verde">
+      <div class="negro">
+        Este elemento SI tiene background-color: green; color: black;
+        <p class="negro">Este tampoco aplica la clase</p>
+      </div>
+    </span>
+    <div class="negro">
+      Este elemento no tiene background-color: green; color: black;
+    </div>
+    <ul class="lista">
+        <li class="item">Item 1</li>
+        <li class="item">Item 2</li>
+        <li class="item">Item 3</li>
+    </ul>
+    <span id="strong">Texto con font-weight: bolder;
+        color: mediumslateblue;
+        font-size: 40px;</span>
+    <span class="reallyStrong">Texto con font-weight: bolder;
+        color: red;
+        font-size: 80px;</span>
+  </body>
+</html>

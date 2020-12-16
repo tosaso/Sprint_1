@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Static Template</title>
+  </head>
+  <body>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+      }
+
+      .container {
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: salmon;
+      }
+
+      .linea1,
+      .linea2,
+      .linea3 {
+        display: flex;
+      }
+
+      .cuadrado {
+        color: rgb(83, 83, 83);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bolder;
+        font-size: 15px;
+        height: 80px;
+        width: 80px;
+        background-color: lightgray;
+        margin: 4px;
+      }
+    </style>
+    <div class="container">
+      <div class="linea1">
+        <div class="cuadrado c-linea1">A,1</div>
+        <span class="cuadrado c-linea1">B,1</span>
+        <section class="cuadrado c-linea1">C,1</section>
+      </div>
+      <div class="linea2">
+        <div class="cuadrado c-linea2">A,2</div>
+        <span class="cuadrado c-linea2">B,2</span>
+        <section class="cuadrado c-linea2">C,2</section>
+      </div>
+      <div class="linea3">
+        <div class="cuadrado c-linea3">A,3</div>
+        <span class="cuadrado c-linea3">B,3</span>
+        <section class="cuadrado c-linea3">C,3</section>
+      </div>
+    </div>
+  </body>
+</html>

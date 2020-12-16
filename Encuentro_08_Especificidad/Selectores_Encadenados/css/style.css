@@ -1,0 +1,37 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+div.contenedor {
+  display: inline-flex;
+}
+
+.contenedor {
+  height: 100px;
+  width: 100px;
+  border: 1px solid tomato;
+  margin: 5px;
+  font-family: Arial;
+  font-size: 13px;
+}
+.texto {
+  color: blue;
+}
+
+.contenedor.texto {
+  color: green;
+  background-color: black;
+}
+.contenedor .texto {
+  color: red;
+  font-weight: bold;
+}
+.contenedor span .texto {
+  background-color: black;
+  color: white;
+  font-weight: normal;
+}
+.contenedor span .texto div {
+  color: yellow;
+}
