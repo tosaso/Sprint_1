@@ -1,0 +1,31 @@
+:root{
+    font-size: 20px;
+
+    --main-color: yellow;
+    
+    --border: 0.1rem solid ;
+    --border-black: var(--border) black;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.texto{
+    font-size: 2rem;
+    margin: 1rem;
+    padding: 0.5rem;
+
+    --text-color: red;
+    color: var(--text-color);
+
+    background-color: var(--main-color);
+}
+
+.contenedor{
+    border: var(--border-black);
+    /*Esta variable no funciona*/
+    background-color: var(--text-color);
+}

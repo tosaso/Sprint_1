@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.caja{
+    background-color: red;
+    width: 60px;
+    height: 60px;
+}
+
+/* Se aplica cuando el viewport al menos tenga 600px de ancho o mas */
+@media screen and (min-width: 600px){
+    .caja{
+        background-color: blue;/*nombre*/
+    }
+}
+
+/* Se aplica cuando el viewport NO tenga mas de 600px de ancho */
+@media screen and (max-width: 500px){
+    .caja{
+        background-color: rgb(23, 231, 23);/*Red Green Blue*/
+    }
+    nav{
+        display: none;
+    }
+}
+
+/* Se aplica cuando el viewport tenga entre 500px y 600px */
+@media screen and (min-width: 500px) and (max-width: 600px){
+    .caja{
+        background-color: #ec10da;/*Hexadecimal*/
+    }
+    nav{
+        visibility: hidden;
+    }
+}
+
+@media print {
+    ul{
+        display: none;
+    }
+}

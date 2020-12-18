@@ -1,0 +1,33 @@
+:root{
+    --font-size-900: 10px;
+    --font-size-700: 5px;
+    --font-size-400: 2px;
+}
+
+span{
+    font-size: 25px;
+}
+
+@media screen and (min-width:900px){
+    /* Sobrescribir  el root inicial
+    :root{
+        --font-size-900: 10px;
+        --font-size-700: 50px;
+        --font-size-400: 2px;
+    }*/
+    span{
+        font-size: var(--font-size-900);
+    }
+}
+
+@media screen and (max-width:700px){
+    .width-700{
+        font-size: var(--font-size-700);
+    }
+}
+
+@media screen and (max-width:400px){
+    #span-400{
+        font-size: var(--font-size-400);
+    }
+}
