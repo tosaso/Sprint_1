@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+  </head>
+  <body>
+    <style>
+      .custom-ch-input {
+        display: none;
+      }
+      .custom-ch-icon svg {
+        display: none;
+      }
+      .custom-ch-input:checked + .custom-ch-icon svg {
+        display: inline-block;
+      }
+      .custom-ch-icon {
+        border: 2px solid;
+        border-radius: 4px;
+        display: flex;
+        height: 25px;
+        width: 25px;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+      }
+    </style>
+    <h1>Custom checkbox</h1>
+
+    <label class="custom-ch-container">
+      <input class="custom-ch-input" type="checkbox" />
+      <span class="custom-ch-icon">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          aria-hidden="true"
+          focusable="false"
+          height="20px"
+        >
+          <path
+            fill="none"
+            stroke="currentColor"
+            stroke-width="3"
+            d="M1.73 12.91l6.37 6.37L22.79 4.59"
+          />
+        </svg>
+      </span>
+    </label>
+
+    <h3>elementos individuales</h3>
+    <label>
+    <input type="checkbox" />
+    <span>
+        <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        aria-hidden="true"
+        focusable="false"
+        height="20px"
+        >
+        <path
+            fill="none"
+            stroke="currentColor"
+            stroke-width="3"
+            d="M1.73 12.91l6.37 6.37L22.79 4.59"
+        />
+        </svg>
+    </span>
+    </label>
+  </body>
+</html>

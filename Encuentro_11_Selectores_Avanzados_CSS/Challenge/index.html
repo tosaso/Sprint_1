@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+    <style>
+      .cuadrado {
+        height: 53px;
+        width: 55px;
+        background-color: rgb(148, 148, 148);
+        border: 1px solid rgb(54, 54, 54);
+        font-size: 35px;
+        text-align: center;
+      }
+      .linea {
+        display: flex;
+      }
+      #linea0 .cuadrado:first-child span.emoji {
+        visibility: hidden;
+      }
+      #linea0 .cuadrado:nth-child(2) span.emoji {
+        visibility: hidden;
+      }
+      #linea0 .cuadrado:nth-child(5) span.emoji {
+        visibility: hidden;
+      }
+      .linea1 .cuadrado:nth-child(3) .emoji {
+        visibility: hidden;
+      }
+      .linea1 .cuadrado:last-child .emoji {
+        visibility: hidden;
+      }
+      .linea2 .cuadrado:nth-child(2) .emoji,
+      .linea2 .cuadrado:last-child .emoji {
+        visibility: hidden;
+      }
+
+      .linea3 .cuadrado:first-child .emoji,
+      .linea3 .cuadrado:nth-child(3) .emoji,
+      .linea3 .cuadrado:nth-child(4) .emoji,
+      .linea3 .cuadrado:last-child .emoji {
+        visibility: hidden;
+      }
+
+      /*.linea3{
+        .cuadrado:nth-child(4){
+          .emoji{
+            visibility: hidden;
+          }
+        }
+      }*/
+    </style>
+  </head>
+  <body>
+    <div class="linea" id="linea0">
+      <div class="cuadrado">
+        <span class="emoji">🔥</span>
+      </div>
+      <div class="cuadrado">
+        <span class="emoji">🔥</span>
+      </div>
+      <div class="cuadrado">
+        <span class="emoji">🌳</span>
+      </div>
+      <div class="cuadrado">
+        <span class="emoji">🌲</span>
+      </div>
+      <div class="cuadrado">
+        <span class="emoji">🔥</span>
+      </div>
+      <div class="cuadrado">
+        <span class="emoji">🌲</span>
+      </div>
+    </div>
+    <div class="linea linea1">
+      <div class="cuadrado">
+        <span class="emoji">🌲</span>
+      </div>
+      <div class="cuadrado">
+        <span class="emoji">🌳</span>
+      </div>
+      <div class="cuadrado">
+        <span class="emoji">🔥</span>
+      </div>
+      <div class="cuadrado">
+        <span class="emoji">🌲</span>
+      </div>
+      <div class="cuadrado">
+        <span class="emoji">🌲</span>
+      </div>
+      <div class="cuadrado">
+        <span class="emoji">🔥</span>
+      </div>
+    </div>
+    <div class="linea linea2">
+      <div class="cuadrado">
+        <span class="emoji">🌲</span>
+      </div>
+      <div class="cuadrado">
+        <span class="emoji">🔥</span>
+      </div>
+      <div class="cuadrado">
+        <span class="emoji">🌲</span>
+      </div>
+      <div class="cuadrado">
+        <span class="emoji">🌲</span>
+      </div>
+      <div class="cuadrado"><span class="emoji">🌳</span>️</div>
+      <div class="cuadrado">
+        <span class="emoji">🔥</span>
+      </div>
+    </div>
+    <div class="linea linea3">
+      <div class="cuadrado">
+        <span class="emoji">🔥</span>
+      </div>
+      <div class="cuadrado">
+        <span class="emoji">🌳</span>
+      </div>
+      <div class="cuadrado">
+        <span class="emoji">🔥</span>
+      </div>
+      <div class="cuadrado">
+        <span class="emoji">🔥</span>
+      </div>
+      <div class="cuadrado">
+        <span class="emoji">🌳</span>
+      </div>
+      <div class="cuadrado">
+        <span class="emoji">🔥</span>
+      </div>
+    </div>
+    <div class="linea linea4">
+      <div class="cuadrado">
+        <span class="emoji">🌳</span>
+      </div>
+      <div class="cuadrado">
+        <span class="emoji">🌳</span>
+      </div>
+      <div class="cuadrado">
+        <span class="emoji">🔥</span>
+      </div>
+      <div class="cuadrado">
+        <span class="emoji">🌳</span>
+      </div>
+      <div class="cuadrado"><span class="emoji">🔥</span>️</div>
+      <div class="cuadrado">
+        <span class="emoji">🌳</span>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,74 @@
+#span-uno{
+    font-size: 30px;
+}
+.texto{
+    font-size: 25px;
+}
+span{
+    font-weight: bold;
+    color: #041e66;
+    font-size: 20px;
+    margin: 5px;
+}
+#span-uno, #span-cuatro{
+    color: #8d1ef5;
+}
+input:first-child{
+    margin-left: 15px;
+    background-color: rgb(95, 160, 109);
+}
+#formulario input:nth-child(2){
+    background-color: rgb(15, 30, 117);
+}
+#formulario>input:last-child{
+    background-color: rgb(160, 95, 135);
+}
+
+input[type="text"]{
+    border: solid 2px blue;
+}
+input[type="text"].texto{
+    border: solid 3px rgb(255, 230, 0);
+}
+input[type="text"].texto::placeholder{
+    color: cornsilk;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.caja {
+    height: 250px;
+    width: 300px;
+    background-color: rgb(71, 203, 255);
+    font-size: 20px;
+    display: inline-block;
+}
+.caja h3{
+    background-color: #FFF;
+}
+.caja#caja-uno{
+    overflow: visible;
+}
+#caja-dos{
+    overflow: hidden;
+}
+#caja-tres{
+    overflow: scroll;
+}
+#caja-cuatro{
+    overflow: auto;
+    scrollbar-color: red;
+}
+#caja-cuatro p{
+    width: 350px;
+}
+p::first-letter, h3::first-letter{
+    font-size: 30px;
+    color: crimson;
+}
+p::first-line{
+    font-weight: 700;
+}
+
+#contenedor{
+    margin-top: 10px;
+    overflow-y: scroll;
+}

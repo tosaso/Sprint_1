@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Avanzado</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <h1>Selectores y especificidad</h1>
+        <span class="texto" id="span-uno">uno</span>
+        <span class="texto">dos</span>
+        <span>tres</span>
+        <span id="span-cuatro">cuatro</span>
+        <span class="texto">cinco</span>
+    </div>
+    <div id="formulario">
+        <input type="text" placeholder="Texto">
+        <input type="password" placeholder="Password">
+        <input type="checkbox" name="ch" id="check">
+        <label for="check">Cuadro de selección</label>
+        <select name="" id="">
+            <option value="01">Item 1</option>
+            <option value="02">Item 2</option>
+            <option value="03">Item 3</option>
+        </select>
+        <input type="email" placeholder="Correo">
+        <input type="text" placeholder="Texto 2" class="texto">
+    </div>
+    <div class="caja" id="caja-uno">
+        <h3>overflow: visible;</h3>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum illum
+            enim iusto ratione quae sapiente, sequi laborum expedita modi vel sint
+            id accusantium, ullam repellendus architecto officia molestias maxime
+            placeat?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum illum
+            enim iusto ratione quae sapiente, sequi laborum expedita modi vel sint
+            id accusantium, ullam repellendus architecto officia molestias maxime
+            placeat?
+        </p>
+    </div>
+    <div class="caja" id="caja-dos">
+        <h3>overflow: hidden;</h3>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum illum
+            enim iusto ratione quae sapiente, sequi laborum expedita modi vel sint
+            id accusantium, ullam repellendus architecto officia molestias maxime
+            placeat?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum illum
+            enim iusto ratione quae sapiente, sequi laborum expedita modi vel sint
+            id accusantium, ullam repellendus architecto officia molestias maxime
+            placeat?
+        </p>
+    </div>
+    <div class="caja" id="caja-tres">
+        <h3>overflow: scroll;</h3>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum illum
+            enim iusto ratione quae sapiente, sequi laborum expedita modi vel sint
+            id accusantium, ullam repellendus architecto officia molestias maxime
+            placeat?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum illum
+            enim iusto ratione quae sapiente, sequi laborum expedita modi vel sint
+            id accusantium, ullam repellendus architecto officia molestias maxime
+            placeat?
+        </p>
+    </div>
+    <div class="caja" id="caja-cuatro">
+        <h3>overflow: auto;</h3>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum illum
+            enim iusto ratione quae sapiente, sequi laborum expedita modi vel sint
+            id accusantium, ullam repellendus architecto officia molestias maxime
+            placeat?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum illum
+            enim iusto ratione quae sapiente, sequi laborum expedita modi vel sint
+            id accusantium, ullam repellendus architecto officia molestias maxime
+            placeat?
+        </p>
+    </div>
+
+    <div id="contenedor" class="caja">
+        #contenedor>div{regla CSS}
+        <div>
+            <div></div>
+        </div>
+        #contenedor div{regla CSS a todos los div}
+    </div>
+</body>
+</html>
