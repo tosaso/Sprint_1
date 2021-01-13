@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            color: brown;
+        }
+        /*{
+            color: blue;
+        }*/
+        p:not(.p2):not(a){
+            color:rgb(26, 175, 88);
+        }
+        a:link{
+            color: cornflowerblue;
+        }
+        a:visited{
+            color: chartreuse;
+        }
+        input:focus{border: solid 5px;}
+    </style>
+</head>
+<body>
+    <h1>Titulo</h1>
+
+    <p>parrafo 1</p>
+    <p class="p2">parrafo 2</p>
+
+    <div>contenido del div</div>
+<input type="text" />
+    <a href="https://google.com" target="_blank">enlace</a>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Menu Desplazable</title>
+  </head>
+  <body>
+    <style>
+      .mostrar-menu {
+        height: 30px;
+        width: 30px;
+        background-color: pink;
+        cursor: pointer;
+      }
+      .menu-desplazable {
+        height: 200px;
+        width: 100%;
+        background-color: hotpink;
+        cursor: pointer;
+        transition: all .4s ease;
+        position: fixed;
+        transform: translate(100%);
+      }
+
+      #desplegar {
+        display: none;
+      }
+
+      #desplegar:checked ~ .menu-desplazable {
+        transform: translate(0);
+      }
+    </style>
+    
+    
+    <div>
+      <input id="desplegar" type="checkbox">
+      <label for="desplegar">
+        <div class="mostrar-menu"></div>
+      </label>
+      <div class="menu-desplazable">
+    </div>
+  </body>
+</html>
